@@ -1,6 +1,6 @@
 """Generate stories from a trained checkpoint.
 
-Example: python sample.py --prompt "Once upon a time" --n 3
+Example: uv run sample.py --prompt "Once upon a time" --n 3
 """
 import argparse
 import os

@@ -79,7 +79,7 @@ flowchart LR
 ```
 
 ```console
-$ python prepare.py
+$ uv run prepare.py
 val.bin: 27,630 stories, 5,469,024 tokens
 train.bin: 2,717,495 stories, 541,469,395 tokens
 # 43 seconds on a Ryzen 7 7840HS

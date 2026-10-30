@@ -1,6 +1,6 @@
 """Story Studio: browse the training stories and make new ones.
 
-Run from the tinygpt folder:  python -m studio.app
+Run from the tinygpt folder:  uv run python -m studio.app
 Then open http://127.0.0.1:8000
 """
 import json

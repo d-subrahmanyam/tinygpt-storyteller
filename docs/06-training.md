@@ -77,7 +77,7 @@ A handy translation: **e^loss ≈ how many tokens the model is "torn between."**
 ## What it looked like
 
 ```console
-$ python train.py > logs/train.log
+$ uv run train.py > logs/train.log
 GPU: Radeon RX 7900 XT
 model: 50.9M params, 8 layers, 512 dim, context 512
 data: 541M train tokens, 32,768 tokens/step, 12000 steps = 393M tokens
@@ -137,13 +137,13 @@ stateDiagram-v2
     Saving --> Training
     Training --> Saving_and_exit: Ctrl+C
     Saving_and_exit --> [*]
-    [*] --> Resumed: python train.py --resume
+    [*] --> Resumed: uv run train.py --resume
     Resumed --> Training
 ```
 
 ```bash
 pkill -INT -f train.py      # stop from another terminal; still saves first
-python train.py --resume    # carry on where it stopped
+uv run train.py --resume    # carry on where it stopped
 ```
 
 > [!NOTE]
@@ -154,7 +154,7 @@ python train.py --resume    # carry on where it stopped
 Before the 70-minute run, a **2-minute, 300-step run** checked that everything worked and measured the speed:
 
 ```bash
-python train.py --iters 300 --warmup 50 --eval-every 300 --out /tmp/smoke
+uv run train.py --iters 300 --warmup 50 --eval-every 300 --out /tmp/smoke
 # ... val loss 2.651 after 300 steps, 96k tok/s
 ```
 

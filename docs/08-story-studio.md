@@ -16,8 +16,8 @@ flowchart LR
 Run it:
 
 ```bash
-python -m studio.build_index   # once: makes studio/library.db (3.6 GB, about 2 minutes)
-python -m studio.app           # open http://127.0.0.1:8000
+uv run python -m studio.build_index   # once: makes studio/library.db (3.6 GB, about 2 minutes)
+uv run python -m studio.app           # open http://127.0.0.1:8000
 ```
 
 ## ✨ The Storyteller tab

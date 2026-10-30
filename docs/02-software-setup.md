@@ -34,11 +34,28 @@ sudo dmesg | grep -i "VRAM memory ready"
 
 ## PyTorch in its own environment
 
-I used [uv](https://github.com/astral-sh/uv) to make a Python 3.12 environment and install PyTorch's ROCm build from the official index:
+The repo is a [uv](https://docs.astral.sh/uv/) project. [pyproject.toml](../pyproject.toml) lists the packages, and `uv.lock` pins the exact version of every one, so you get the same environment I trained with. One command creates `.venv`, downloads Python 3.12 if you don't have it, and installs everything:
 
 ```bash
-uv venv --python 3.12 .venv
-uv pip install --python .venv/bin/python torch --index-url https://download.pytorch.org/whl/rocm7.2
+uv sync --extra rocm      # AMD; use --extra cuda for NVIDIA, --extra cpu for no GPU
+```
+
+PyTorch publishes a separate build for each kind of GPU, each on its own package index. The three *extras* in `pyproject.toml` point `torch` at the right one:
+
+```toml
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-rocm", extra = "rocm" },   # download.pytorch.org/whl/rocm7.2
+    { index = "pytorch-cuda", extra = "cuda" },   # download.pytorch.org/whl/cu130
+    { index = "pytorch-cpu", extra = "cpu" },     # download.pytorch.org/whl/cpu
+]
+```
+
+After that, run any script with `uv run`. It uses `.venv` automatically, so there's no `source .venv/bin/activate` to forget:
+
+```bash
+uv run sample.py --prompt "Once upon a time"
+uv run uv run python -m studio.app
 ```
 
 > [!NOTE]
@@ -47,7 +64,7 @@ uv pip install --python .venv/bin/python torch --index-url https://download.pyto
 Check it:
 
 ```console
-$ python -c "import torch; print(torch.__version__, torch.cuda.device_count())
+$ uv run python -c "import torch; print(torch.__version__, torch.cuda.device_count())
 for i in range(torch.cuda.device_count()): print(i, torch.cuda.get_device_name(i))"
 2.14.1+rocm7.2 2
 0 Radeon RX 7900 XT
@@ -97,7 +114,7 @@ Qwen3 14B generates about **63 tokens/sec** on this card and loads in **3.9 s** 
 
 ```bash
 sudo apt install python3.12-dev
-python train.py --compile
+uv run train.py --compile
 ```
 
 I trained without it, at about 96k tokens/sec.

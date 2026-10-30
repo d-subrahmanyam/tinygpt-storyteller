@@ -3,7 +3,7 @@
 Numbers are nice, but the real test is reading what it writes.
 
 ```bash
-python sample.py --prompt "Once upon a time, there was a unicorn named" --n 3
+uv run sample.py --prompt "Once upon a time, there was a unicorn named" --n 3
 ```
 
 ## After 6 minutes (step 1,000, val loss 1.81)

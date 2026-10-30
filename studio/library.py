@@ -20,7 +20,7 @@ def _highlight(snippet):
 class Library:
     def __init__(self, path=DB):
         if not os.path.exists(path):
-            raise SystemExit(f"{path} not found; run: python -m studio.build_index")
+            raise SystemExit(f"{path} not found; run: uv run python -m studio.build_index")
         self.db = sqlite3.connect(f"file:{path}?mode=ro", uri=True, check_same_thread=False)
         self.db.row_factory = sqlite3.Row
         self.total = self.db.execute("SELECT max(id) FROM stories").fetchone()[0]

@@ -7,7 +7,7 @@ Loops three checks until the time is up and counts any data errors:
   - PCIe:    copies pinned buffers host->GPU->host and compares them
 A sensor line (power, temps, load, link) is printed every interval.
 
-Usage: python egpu_stress.py [seconds] (default 600)
+Usage: uv run tools/egpu_stress.py [seconds] (default 600)
 """
 import glob
 import os

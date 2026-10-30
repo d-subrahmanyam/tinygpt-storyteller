@@ -4,7 +4,7 @@ Reads the TinyStories text files and writes studio/library.db: an SQLite
 table of every story (with word and token counts) plus a full-text search
 index. Run once after downloading the data (takes a few minutes):
 
-  python -m studio.build_index
+  uv run python -m studio.build_index
 """
 import os
 import sqlite3

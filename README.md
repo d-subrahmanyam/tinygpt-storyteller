@@ -51,25 +51,27 @@ flowchart LR
 
 You need Linux, a GPU that PyTorch supports (this repo was built on AMD ROCm; NVIDIA CUDA works too), and about 10 GB of free disk space.
 
+You also need [uv](https://docs.astral.sh/uv/getting-started/installation/), which installs Python 3.12 and every package for you.
+
 ```bash
-# 1. Python environment (Python 3.12). For NVIDIA, use the CUDA index from pytorch.org instead.
-uv venv --python 3.12 .venv && source .venv/bin/activate
-uv pip install torch --index-url https://download.pytorch.org/whl/rocm7.2
-uv pip install -r requirements.txt
+# 1. Install everything into .venv. Pick the PyTorch build for your GPU:
+uv sync --extra rocm      # AMD (ROCm 7.2)
+# uv sync --extra cuda    # NVIDIA (CUDA 13.0)
+# uv sync --extra cpu     # no GPU: fine for sampling, very slow for training
 
 # 2. Download and tokenize the data (~2.2 GB download, ~1 minute to tokenize)
 bash scripts/download_data.sh
-python prepare.py
+uv run prepare.py
 
 # 3. Train (~70 minutes on an RX 7900 XT; Ctrl+C saves, --resume continues)
-python train.py > logs/train.log
+uv run train.py > logs/train.log
 
 # 4. Read some stories
-python sample.py --prompt "Once upon a time, there was a dragon"
+uv run sample.py --prompt "Once upon a time, there was a dragon"
 
 # 5. Optional: Story Studio (needs Ollama with qwen3:14b)
-python -m studio.build_index
-python -m studio.app        # then open http://127.0.0.1:8000
+uv run python -m studio.build_index
+uv run python -m studio.app        # then open http://127.0.0.1:8000
 ```
 
 On a machine with an AMD integrated GPU as well as a discrete one, set `HIP_VISIBLE_DEVICES=0` (see [chapter 2](docs/02-software-setup.md)).
@@ -77,6 +79,7 @@ On a machine with an AMD integrated GPU as well as a discrete one, set `HIP_VISI
 ## Repo layout
 
 ```
+pyproject.toml      dependencies; uv.lock pins the exact versions
 prepare.py          tokenize the stories into data/train.bin and data/val.bin
 model.py            the GPT model (about 110 lines)
 train.py            the training loop

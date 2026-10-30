@@ -146,7 +146,7 @@ Afterwards, the 70-minute training run went through without a single error, whic
 
 ```bash
 # Quick 2-minute health check after any boot:
-HIP_VISIBLE_DEVICES=0 python tools/egpu_stress.py 120
+HIP_VISIBLE_DEVICES=0 uv run tools/egpu_stress.py 120
 ```
 
 ## Lessons

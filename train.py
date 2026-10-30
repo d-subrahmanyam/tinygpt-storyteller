@@ -4,9 +4,9 @@ Saves a checkpoint to out/ckpt.pt every --ckpt-every steps and on Ctrl+C,
 so a run can be stopped and continued later with --resume.
 
 Examples:
-  python train.py --iters 200 --eval-every 100      # quick smoke test
-  python train.py                                   # full run
-  python train.py --resume                          # continue a stopped run
+  uv run train.py --iters 200 --eval-every 100      # quick smoke test
+  uv run train.py                                   # full run
+  uv run train.py --resume                          # continue a stopped run
 """
 import argparse
 import glob

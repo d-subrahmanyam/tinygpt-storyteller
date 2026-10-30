@@ -1,6 +1,6 @@
 """Generate the charts and pictures used in docs/ from real logs, data and the model.
 
-Run from the tinygpt folder after training:  python tools/make_figures.py
+Run from the tinygpt folder after training:  uv run tools/make_figures.py
 """
 import math
 import os
