@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Story Studio</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>📖 Story Studio</h1>
+      <p id="model-info" class="muted">Loading model info…</p>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="library" role="tab">📚 Library</button>
+      <button class="tab" data-tab="storyteller" role="tab">✨ Storyteller</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Library: the stories the model learned from -->
+    <section id="library" class="panel active">
+      <form id="search-form" class="search">
+        <input id="search-input" type="search" placeholder="Search the training stories… try “unicorn”" autocomplete="off">
+        <button type="submit" class="btn primary">Search</button>
+        <button type="button" id="random-btn" class="btn">🎲 Random</button>
+      </form>
+      <p id="search-summary" class="muted"></p>
+      <div id="results"></div>
+      <button id="more-btn" class="btn more" hidden>Load more</button>
+    </section>
+
+    <!-- Storyteller: Qwen opening -> tiny GPT story -> Qwen check -->
+    <section id="storyteller" class="panel">
+      <form id="tell-form" class="tell">
+        <textarea id="request" rows="2" placeholder="A bedtime story with a unicorn and a happy ending"></textarea>
+        <div class="examples">
+          <span class="muted">Try:</span>
+          <button type="button" class="chip">A bedtime story with a unicorn and a happy ending</button>
+          <button type="button" class="chip">A little dragon who learns to share</button>
+          <button type="button" class="chip">A rainy day adventure with a puppy</button>
+        </div>
+        <button type="submit" id="tell-btn" class="btn primary big">✨ Tell me a story</button>
+      </form>
+
+      <div id="pipeline" hidden>
+        <p id="attempt" class="attempt"></p>
+
+        <article class="step" id="step-opening">
+          <header><span class="status"></span><h3>Step 1 · Qwen writes the opening</h3></header>
+          <p class="opening-text story-text"></p>
+          <p class="meta"></p>
+        </article>
+
+        <article class="step" id="step-story">
+          <header><span class="status"></span><h3>Step 2 · Your model writes the story</h3></header>
+          <div class="story-text"><span class="from-qwen"></span><span class="from-gpt"></span><span class="cursor"></span></div>
+          <div class="counter">
+            <span class="stat" id="stat-tokens">🔤 0 tokens</span>
+            <span class="stat" id="stat-speed">⚡ – tokens/sec</span>
+            <span class="stat" id="stat-context">🪟 0 / 512 context</span>
+            <div class="bar"><div id="context-bar"></div></div>
+          </div>
+        </article>
+
+        <article class="step" id="step-check">
+          <header><span class="status"></span><h3>Step 3 · Qwen checks it</h3></header>
+          <div class="checks"></div>
+          <p class="meta summary"></p>
+        </article>
+
+        <div id="final" hidden>
+          <p id="final-summary"></p>
+          <div class="actions">
+            <button id="again-btn" class="btn primary">🔁 Another one</button>
+            <button id="save-btn" class="btn">💾 Save</button>
+            <span id="save-note" class="muted"></span>
+          </div>
+        </div>
+      </div>
+      <p id="tell-error" class="error" hidden></p>
+    </section>
+  </main>
+
+  <footer class="muted">Runs entirely on your machine · tiny GPT + Qwen3 via Ollama</footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>

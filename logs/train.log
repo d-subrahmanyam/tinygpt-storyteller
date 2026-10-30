@@ -1,0 +1,268 @@
+GPU: Radeon RX 7900 XT
+model: 50.9M params, 8 layers, 512 dim, context 512
+data: 541M train tokens, 32,768 tokens/step, 12000 steps = 393M tokens
+step     50 | loss 7.206 | lr 1.00e-04 | 93k tok/s | 81C 257W
+step    100 | loss 4.459 | lr 2.00e-04 | 96k tok/s | 86C 254W
+step    150 | loss 3.887 | lr 3.00e-04 | 96k tok/s | 87C 254W
+step    200 | loss 3.567 | lr 4.00e-04 | 96k tok/s | 87C 246W
+step    250 | loss 3.171 | lr 5.00e-04 | 96k tok/s | 86C 257W
+step    300 | loss 2.951 | lr 6.00e-04 | 96k tok/s | 85C 255W
+step    350 | loss 2.776 | lr 7.00e-04 | 96k tok/s | 85C 250W
+step    400 | loss 2.679 | lr 8.00e-04 | 96k tok/s | 85C 255W
+step    450 | loss 2.462 | lr 9.00e-04 | 96k tok/s | 85C 241W
+step    500 | loss 2.320 | lr 1.00e-03 | 96k tok/s | 85C 241W
+--- step 500: val loss 2.303 (best 2.303)
+step    550 | loss 2.187 | lr 1.00e-03 | 84k tok/s | 85C 256W
+step    600 | loss 2.104 | lr 1.00e-03 | 96k tok/s | 85C 255W
+step    650 | loss 2.088 | lr 1.00e-03 | 96k tok/s | 85C 255W
+step    700 | loss 2.000 | lr 9.99e-04 | 96k tok/s | 85C 242W
+step    750 | loss 2.126 | lr 9.99e-04 | 96k tok/s | 86C 253W
+step    800 | loss 1.896 | lr 9.98e-04 | 96k tok/s | 86C 257W
+step    850 | loss 1.888 | lr 9.98e-04 | 96k tok/s | 85C 255W
+step    900 | loss 1.781 | lr 9.97e-04 | 96k tok/s | 86C 255W
+step    950 | loss 1.785 | lr 9.97e-04 | 96k tok/s | 84C 215W
+step   1000 | loss 1.934 | lr 9.96e-04 | 96k tok/s | 86C 246W
+--- step 1000: val loss 1.807 (best 1.807)
+step   1050 | loss 1.778 | lr 9.95e-04 | 82k tok/s | 86C 256W
+step   1100 | loss 1.724 | lr 9.94e-04 | 95k tok/s | 86C 256W
+step   1150 | loss 1.803 | lr 9.93e-04 | 96k tok/s | 86C 243W
+step   1200 | loss 1.777 | lr 9.92e-04 | 95k tok/s | 87C 257W
+step   1250 | loss 1.654 | lr 9.91e-04 | 95k tok/s | 87C 255W
+step   1300 | loss 1.725 | lr 9.89e-04 | 95k tok/s | 87C 252W
+step   1350 | loss 1.694 | lr 9.88e-04 | 95k tok/s | 87C 255W
+step   1400 | loss 1.695 | lr 9.86e-04 | 95k tok/s | 87C 255W
+step   1450 | loss 1.603 | lr 9.85e-04 | 95k tok/s | 87C 255W
+step   1500 | loss 1.596 | lr 9.83e-04 | 95k tok/s | 86C 216W
+--- step 1500: val loss 1.647 (best 1.647)
+step   1550 | loss 1.623 | lr 9.82e-04 | 84k tok/s | 88C 255W
+step   1600 | loss 1.654 | lr 9.80e-04 | 95k tok/s | 88C 257W
+step   1650 | loss 1.692 | lr 9.78e-04 | 95k tok/s | 88C 246W
+step   1700 | loss 1.613 | lr 9.76e-04 | 95k tok/s | 88C 245W
+step   1750 | loss 1.569 | lr 9.74e-04 | 95k tok/s | 88C 253W
+step   1800 | loss 1.602 | lr 9.72e-04 | 95k tok/s | 88C 256W
+step   1850 | loss 1.657 | lr 9.70e-04 | 95k tok/s | 88C 257W
+step   1900 | loss 1.609 | lr 9.68e-04 | 95k tok/s | 88C 242W
+step   1950 | loss 1.553 | lr 9.65e-04 | 95k tok/s | 87C 219W
+step   2000 | loss 1.549 | lr 9.63e-04 | 95k tok/s | 88C 254W
+--- step 2000: val loss 1.561 (best 1.561)
+step   2050 | loss 1.476 | lr 9.60e-04 | 80k tok/s | 88C 255W
+step   2100 | loss 1.665 | lr 9.58e-04 | 95k tok/s | 88C 257W
+step   2150 | loss 1.587 | lr 9.55e-04 | 95k tok/s | 89C 244W
+step   2200 | loss 1.523 | lr 9.52e-04 | 95k tok/s | 88C 255W
+step   2250 | loss 1.487 | lr 9.50e-04 | 95k tok/s | 88C 258W
+step   2300 | loss 1.547 | lr 9.47e-04 | 95k tok/s | 88C 254W
+step   2350 | loss 1.566 | lr 9.44e-04 | 95k tok/s | 89C 255W
+step   2400 | loss 1.529 | lr 9.41e-04 | 95k tok/s | 89C 244W
+step   2450 | loss 1.475 | lr 9.38e-04 | 95k tok/s | 89C 242W
+step   2500 | loss 1.487 | lr 9.35e-04 | 95k tok/s | 88C 254W
+--- step 2500: val loss 1.523 (best 1.523)
+step   2550 | loss 1.515 | lr 9.31e-04 | 84k tok/s | 87C 207W
+step   2600 | loss 1.492 | lr 9.28e-04 | 95k tok/s | 88C 253W
+step   2650 | loss 1.489 | lr 9.25e-04 | 95k tok/s | 88C 255W
+step   2700 | loss 1.485 | lr 9.21e-04 | 95k tok/s | 88C 257W
+step   2750 | loss 1.459 | lr 9.18e-04 | 95k tok/s | 88C 245W
+step   2800 | loss 1.504 | lr 9.14e-04 | 95k tok/s | 87C 231W
+step   2850 | loss 1.444 | lr 9.10e-04 | 95k tok/s | 88C 255W
+step   2900 | loss 1.565 | lr 9.07e-04 | 95k tok/s | 88C 255W
+step   2950 | loss 1.502 | lr 9.03e-04 | 95k tok/s | 88C 255W
+step   3000 | loss 1.470 | lr 8.99e-04 | 95k tok/s | 89C 252W
+--- step 3000: val loss 1.490 (best 1.490)
+step   3050 | loss 1.495 | lr 8.95e-04 | 80k tok/s | 88C 254W
+step   3100 | loss 1.485 | lr 8.91e-04 | 95k tok/s | 89C 246W
+step   3150 | loss 1.388 | lr 8.87e-04 | 95k tok/s | 89C 253W
+step   3200 | loss 1.497 | lr 8.83e-04 | 95k tok/s | 89C 257W
+step   3250 | loss 1.481 | lr 8.79e-04 | 95k tok/s | 89C 255W
+step   3300 | loss 1.522 | lr 8.75e-04 | 95k tok/s | 89C 255W
+step   3350 | loss 1.416 | lr 8.70e-04 | 95k tok/s | 89C 251W
+step   3400 | loss 1.321 | lr 8.66e-04 | 95k tok/s | 88C 254W
+step   3450 | loss 1.568 | lr 8.62e-04 | 95k tok/s | 88C 256W
+step   3500 | loss 1.408 | lr 8.57e-04 | 95k tok/s | 88C 255W
+--- step 3500: val loss 1.444 (best 1.444)
+step   3550 | loss 1.485 | lr 8.53e-04 | 84k tok/s | 88C 257W
+step   3600 | loss 1.453 | lr 8.48e-04 | 95k tok/s | 88C 256W
+step   3650 | loss 1.438 | lr 8.44e-04 | 95k tok/s | 88C 244W
+step   3700 | loss 1.397 | lr 8.39e-04 | 95k tok/s | 89C 247W
+step   3750 | loss 1.432 | lr 8.34e-04 | 95k tok/s | 88C 256W
+step   3800 | loss 1.398 | lr 8.29e-04 | 95k tok/s | 88C 254W
+step   3850 | loss 1.428 | lr 8.24e-04 | 95k tok/s | 88C 242W
+step   3900 | loss 1.423 | lr 8.20e-04 | 95k tok/s | 88C 251W
+step   3950 | loss 1.399 | lr 8.15e-04 | 95k tok/s | 88C 245W
+step   4000 | loss 1.401 | lr 8.10e-04 | 95k tok/s | 88C 256W
+--- step 4000: val loss 1.418 (best 1.418)
+step   4050 | loss 1.395 | lr 8.05e-04 | 80k tok/s | 88C 254W
+step   4100 | loss 1.382 | lr 7.99e-04 | 95k tok/s | 88C 255W
+step   4150 | loss 1.425 | lr 7.94e-04 | 95k tok/s | 88C 244W
+step   4200 | loss 1.450 | lr 7.89e-04 | 95k tok/s | 88C 233W
+step   4250 | loss 1.418 | lr 7.84e-04 | 95k tok/s | 88C 253W
+step   4300 | loss 1.382 | lr 7.79e-04 | 95k tok/s | 88C 253W
+step   4350 | loss 1.412 | lr 7.73e-04 | 95k tok/s | 88C 256W
+step   4400 | loss 1.415 | lr 7.68e-04 | 95k tok/s | 87C 224W
+step   4450 | loss 1.403 | lr 7.63e-04 | 95k tok/s | 87C 221W
+step   4500 | loss 1.376 | lr 7.57e-04 | 95k tok/s | 88C 256W
+--- step 4500: val loss 1.401 (best 1.401)
+step   4550 | loss 1.324 | lr 7.52e-04 | 84k tok/s | 88C 243W
+step   4600 | loss 1.358 | lr 7.46e-04 | 95k tok/s | 89C 258W
+step   4650 | loss 1.360 | lr 7.41e-04 | 95k tok/s | 88C 255W
+step   4700 | loss 1.403 | lr 7.35e-04 | 95k tok/s | 88C 255W
+step   4750 | loss 1.381 | lr 7.29e-04 | 95k tok/s | 88C 257W
+step   4800 | loss 1.416 | lr 7.24e-04 | 95k tok/s | 88C 245W
+step   4850 | loss 1.351 | lr 7.18e-04 | 95k tok/s | 88C 235W
+step   4900 | loss 1.364 | lr 7.12e-04 | 95k tok/s | 88C 254W
+step   4950 | loss 1.320 | lr 7.07e-04 | 95k tok/s | 88C 255W
+step   5000 | loss 1.363 | lr 7.01e-04 | 95k tok/s | 88C 255W
+--- step 5000: val loss 1.371 (best 1.371)
+step   5050 | loss 1.286 | lr 6.95e-04 | 80k tok/s | 88C 254W
+step   5100 | loss 1.376 | lr 6.89e-04 | 95k tok/s | 88C 254W
+step   5150 | loss 1.357 | lr 6.83e-04 | 95k tok/s | 88C 256W
+step   5200 | loss 1.295 | lr 6.77e-04 | 95k tok/s | 88C 224W
+step   5250 | loss 1.380 | lr 6.72e-04 | 95k tok/s | 88C 255W
+step   5300 | loss 1.306 | lr 6.66e-04 | 95k tok/s | 89C 254W
+step   5350 | loss 1.376 | lr 6.60e-04 | 95k tok/s | 89C 241W
+step   5400 | loss 1.384 | lr 6.54e-04 | 95k tok/s | 89C 254W
+step   5450 | loss 1.385 | lr 6.48e-04 | 95k tok/s | 89C 254W
+step   5500 | loss 1.396 | lr 6.42e-04 | 95k tok/s | 89C 248W
+--- step 5500: val loss 1.341 (best 1.341)
+step   5550 | loss 1.372 | lr 6.36e-04 | 84k tok/s | 88C 236W
+step   5600 | loss 1.399 | lr 6.30e-04 | 95k tok/s | 88C 253W
+step   5650 | loss 1.368 | lr 6.24e-04 | 95k tok/s | 88C 254W
+step   5700 | loss 1.285 | lr 6.17e-04 | 95k tok/s | 88C 255W
+step   5750 | loss 1.331 | lr 6.11e-04 | 95k tok/s | 88C 255W
+step   5800 | loss 1.263 | lr 6.05e-04 | 95k tok/s | 88C 256W
+step   5850 | loss 1.305 | lr 5.99e-04 | 95k tok/s | 88C 240W
+step   5900 | loss 1.285 | lr 5.93e-04 | 95k tok/s | 88C 259W
+step   5950 | loss 1.415 | lr 5.87e-04 | 95k tok/s | 88C 255W
+step   6000 | loss 1.407 | lr 5.81e-04 | 95k tok/s | 88C 255W
+--- step 6000: val loss 1.324 (best 1.324)
+step   6050 | loss 1.290 | lr 5.75e-04 | 80k tok/s | 88C 244W
+step   6100 | loss 1.278 | lr 5.69e-04 | 95k tok/s | 88C 254W
+step   6150 | loss 1.383 | lr 5.62e-04 | 95k tok/s | 88C 254W
+step   6200 | loss 1.316 | lr 5.56e-04 | 95k tok/s | 88C 256W
+step   6250 | loss 1.333 | lr 5.50e-04 | 95k tok/s | 88C 255W
+step   6300 | loss 1.379 | lr 5.44e-04 | 95k tok/s | 88C 255W
+step   6350 | loss 1.374 | lr 5.38e-04 | 95k tok/s | 88C 247W
+step   6400 | loss 1.287 | lr 5.32e-04 | 95k tok/s | 88C 254W
+step   6450 | loss 1.299 | lr 5.26e-04 | 95k tok/s | 88C 255W
+step   6500 | loss 1.262 | lr 5.19e-04 | 95k tok/s | 88C 256W
+--- step 6500: val loss 1.318 (best 1.318)
+step   6550 | loss 1.311 | lr 5.13e-04 | 84k tok/s | 88C 245W
+step   6600 | loss 1.237 | lr 5.07e-04 | 95k tok/s | 88C 253W
+step   6650 | loss 1.309 | lr 5.01e-04 | 95k tok/s | 88C 255W
+step   6700 | loss 1.335 | lr 4.95e-04 | 95k tok/s | 88C 255W
+step   6750 | loss 1.337 | lr 4.89e-04 | 95k tok/s | 88C 246W
+step   6800 | loss 1.234 | lr 4.83e-04 | 95k tok/s | 88C 255W
+step   6850 | loss 1.396 | lr 4.77e-04 | 95k tok/s | 88C 252W
+step   6900 | loss 1.291 | lr 4.71e-04 | 95k tok/s | 88C 257W
+step   6950 | loss 1.257 | lr 4.65e-04 | 95k tok/s | 88C 256W
+step   7000 | loss 1.349 | lr 4.59e-04 | 95k tok/s | 88C 238W
+--- step 7000: val loss 1.307 (best 1.307)
+step   7050 | loss 1.298 | lr 4.53e-04 | 80k tok/s | 88C 237W
+step   7100 | loss 1.336 | lr 4.47e-04 | 95k tok/s | 88C 253W
+step   7150 | loss 1.280 | lr 4.41e-04 | 95k tok/s | 87C 218W
+step   7200 | loss 1.310 | lr 4.35e-04 | 95k tok/s | 88C 257W
+step   7250 | loss 1.233 | lr 4.29e-04 | 95k tok/s | 88C 254W
+step   7300 | loss 1.254 | lr 4.23e-04 | 95k tok/s | 88C 255W
+step   7350 | loss 1.291 | lr 4.17e-04 | 95k tok/s | 88C 247W
+step   7400 | loss 1.298 | lr 4.11e-04 | 95k tok/s | 88C 256W
+step   7450 | loss 1.287 | lr 4.05e-04 | 95k tok/s | 89C 251W
+step   7500 | loss 1.328 | lr 3.99e-04 | 95k tok/s | 88C 254W
+--- step 7500: val loss 1.279 (best 1.279)
+step   7550 | loss 1.290 | lr 3.94e-04 | 84k tok/s | 88C 257W
+step   7600 | loss 1.274 | lr 3.88e-04 | 95k tok/s | 88C 254W
+step   7650 | loss 1.317 | lr 3.82e-04 | 95k tok/s | 88C 257W
+step   7700 | loss 1.311 | lr 3.76e-04 | 95k tok/s | 88C 256W
+step   7750 | loss 1.292 | lr 3.71e-04 | 95k tok/s | 88C 255W
+step   7800 | loss 1.245 | lr 3.65e-04 | 95k tok/s | 88C 256W
+step   7850 | loss 1.314 | lr 3.60e-04 | 95k tok/s | 87C 241W
+step   7900 | loss 1.277 | lr 3.54e-04 | 96k tok/s | 88C 257W
+step   7950 | loss 1.205 | lr 3.49e-04 | 95k tok/s | 87C 255W
+step   8000 | loss 1.147 | lr 3.43e-04 | 95k tok/s | 88C 251W
+--- step 8000: val loss 1.279 (best 1.279)
+step   8050 | loss 1.280 | lr 3.38e-04 | 80k tok/s | 86C 207W
+step   8100 | loss 1.301 | lr 3.32e-04 | 95k tok/s | 88C 255W
+step   8150 | loss 1.283 | lr 3.27e-04 | 95k tok/s | 88C 255W
+step   8200 | loss 1.255 | lr 3.22e-04 | 95k tok/s | 88C 256W
+step   8250 | loss 1.248 | lr 3.16e-04 | 95k tok/s | 88C 257W
+step   8300 | loss 1.249 | lr 3.11e-04 | 95k tok/s | 89C 245W
+step   8350 | loss 1.246 | lr 3.06e-04 | 95k tok/s | 89C 258W
+step   8400 | loss 1.297 | lr 3.01e-04 | 95k tok/s | 89C 253W
+step   8450 | loss 1.239 | lr 2.96e-04 | 95k tok/s | 88C 256W
+step   8500 | loss 1.252 | lr 2.91e-04 | 95k tok/s | 88C 255W
+--- step 8500: val loss 1.253 (best 1.253)
+step   8550 | loss 1.248 | lr 2.86e-04 | 84k tok/s | 88C 255W
+step   8600 | loss 1.236 | lr 2.81e-04 | 95k tok/s | 88C 255W
+step   8650 | loss 1.231 | lr 2.76e-04 | 95k tok/s | 88C 246W
+step   8700 | loss 1.235 | lr 2.71e-04 | 95k tok/s | 88C 253W
+step   8750 | loss 1.311 | lr 2.66e-04 | 95k tok/s | 88C 252W
+step   8800 | loss 1.227 | lr 2.61e-04 | 95k tok/s | 88C 247W
+step   8850 | loss 1.236 | lr 2.57e-04 | 95k tok/s | 88C 253W
+step   8900 | loss 1.266 | lr 2.52e-04 | 95k tok/s | 88C 255W
+step   8950 | loss 1.255 | lr 2.47e-04 | 95k tok/s | 89C 254W
+step   9000 | loss 1.162 | lr 2.43e-04 | 95k tok/s | 88C 254W
+--- step 9000: val loss 1.253 (best 1.253)
+step   9050 | loss 1.297 | lr 2.38e-04 | 80k tok/s | 87C 214W
+step   9100 | loss 1.185 | lr 2.34e-04 | 95k tok/s | 88C 258W
+step   9150 | loss 1.259 | lr 2.30e-04 | 95k tok/s | 88C 253W
+step   9200 | loss 1.283 | lr 2.25e-04 | 95k tok/s | 88C 257W
+step   9250 | loss 1.222 | lr 2.21e-04 | 95k tok/s | 88C 255W
+step   9300 | loss 1.194 | lr 2.17e-04 | 95k tok/s | 88C 244W
+step   9350 | loss 1.209 | lr 2.13e-04 | 95k tok/s | 86C 215W
+step   9400 | loss 1.240 | lr 2.09e-04 | 95k tok/s | 88C 259W
+step   9450 | loss 1.206 | lr 2.05e-04 | 95k tok/s | 88C 253W
+step   9500 | loss 1.150 | lr 2.01e-04 | 95k tok/s | 88C 255W
+--- step 9500: val loss 1.245 (best 1.245)
+step   9550 | loss 1.130 | lr 1.97e-04 | 84k tok/s | 88C 254W
+step   9600 | loss 1.237 | lr 1.93e-04 | 95k tok/s | 88C 255W
+step   9650 | loss 1.247 | lr 1.90e-04 | 95k tok/s | 88C 255W
+step   9700 | loss 1.223 | lr 1.86e-04 | 95k tok/s | 88C 256W
+step   9750 | loss 1.176 | lr 1.82e-04 | 95k tok/s | 88C 243W
+step   9800 | loss 1.244 | lr 1.79e-04 | 95k tok/s | 88C 257W
+step   9850 | loss 1.184 | lr 1.75e-04 | 95k tok/s | 88C 253W
+step   9900 | loss 1.082 | lr 1.72e-04 | 95k tok/s | 88C 254W
+step   9950 | loss 1.200 | lr 1.69e-04 | 95k tok/s | 88C 255W
+step  10000 | loss 1.187 | lr 1.66e-04 | 95k tok/s | 88C 255W
+--- step 10000: val loss 1.227 (best 1.227)
+step  10050 | loss 1.208 | lr 1.62e-04 | 80k tok/s | 88C 253W
+step  10100 | loss 1.235 | lr 1.59e-04 | 95k tok/s | 88C 255W
+step  10150 | loss 1.236 | lr 1.56e-04 | 95k tok/s | 88C 255W
+step  10200 | loss 1.230 | lr 1.53e-04 | 95k tok/s | 88C 245W
+step  10250 | loss 1.168 | lr 1.51e-04 | 95k tok/s | 88C 256W
+step  10300 | loss 1.234 | lr 1.48e-04 | 95k tok/s | 88C 233W
+step  10350 | loss 1.230 | lr 1.45e-04 | 95k tok/s | 88C 253W
+step  10400 | loss 1.166 | lr 1.42e-04 | 95k tok/s | 88C 256W
+step  10450 | loss 1.214 | lr 1.40e-04 | 95k tok/s | 88C 254W
+step  10500 | loss 1.247 | lr 1.37e-04 | 95k tok/s | 86C 232W
+--- step 10500: val loss 1.218 (best 1.218)
+step  10550 | loss 1.149 | lr 1.35e-04 | 84k tok/s | 88C 254W
+step  10600 | loss 1.266 | lr 1.33e-04 | 95k tok/s | 88C 237W
+step  10650 | loss 1.231 | lr 1.30e-04 | 95k tok/s | 88C 258W
+step  10700 | loss 1.189 | lr 1.28e-04 | 95k tok/s | 88C 252W
+step  10750 | loss 1.185 | lr 1.26e-04 | 95k tok/s | 88C 255W
+step  10800 | loss 1.183 | lr 1.24e-04 | 95k tok/s | 89C 253W
+step  10850 | loss 1.176 | lr 1.22e-04 | 95k tok/s | 88C 257W
+step  10900 | loss 1.151 | lr 1.20e-04 | 95k tok/s | 88C 240W
+step  10950 | loss 1.172 | lr 1.18e-04 | 95k tok/s | 88C 253W
+step  11000 | loss 1.201 | lr 1.17e-04 | 95k tok/s | 88C 254W
+--- step 11000: val loss 1.211 (best 1.211)
+step  11050 | loss 1.280 | lr 1.15e-04 | 80k tok/s | 88C 240W
+step  11100 | loss 1.170 | lr 1.14e-04 | 95k tok/s | 88C 255W
+step  11150 | loss 1.161 | lr 1.12e-04 | 95k tok/s | 88C 254W
+step  11200 | loss 1.201 | lr 1.11e-04 | 95k tok/s | 88C 255W
+step  11250 | loss 1.241 | lr 1.09e-04 | 95k tok/s | 88C 255W
+step  11300 | loss 1.202 | lr 1.08e-04 | 95k tok/s | 88C 247W
+step  11350 | loss 1.136 | lr 1.07e-04 | 95k tok/s | 88C 247W
+step  11400 | loss 1.202 | lr 1.06e-04 | 95k tok/s | 88C 254W
+step  11450 | loss 1.181 | lr 1.05e-04 | 95k tok/s | 88C 254W
+step  11500 | loss 1.237 | lr 1.04e-04 | 95k tok/s | 88C 257W
+--- step 11500: val loss 1.203 (best 1.203)
+step  11550 | loss 1.094 | lr 1.03e-04 | 84k tok/s | 88C 254W
+step  11600 | loss 1.135 | lr 1.03e-04 | 95k tok/s | 88C 256W
+step  11650 | loss 1.216 | lr 1.02e-04 | 95k tok/s | 88C 255W
+step  11700 | loss 1.172 | lr 1.02e-04 | 95k tok/s | 88C 256W
+step  11750 | loss 1.192 | lr 1.01e-04 | 95k tok/s | 88C 244W
+step  11800 | loss 1.221 | lr 1.01e-04 | 95k tok/s | 88C 245W
+step  11850 | loss 1.207 | lr 1.00e-04 | 95k tok/s | 88C 252W
+step  11900 | loss 1.119 | lr 1.00e-04 | 95k tok/s | 88C 255W
+step  11950 | loss 1.178 | lr 1.00e-04 | 95k tok/s | 88C 255W
+step  12000 | loss 1.200 | lr 1.00e-04 | 95k tok/s | 88C 256W
+--- step 12000: val loss 1.192 (best 1.192)
+done

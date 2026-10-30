@@ -1,0 +1,12 @@
+# Large or generated files (download/regenerate them instead)
+data/*.txt
+data/*.bin
+out/
+studio/library.db
+saved/
+
+# Local tooling
+.venv/
+__pycache__/
+*.tmp
+.superpowers/

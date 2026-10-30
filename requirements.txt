@@ -1,0 +1,7 @@
+# Install PyTorch first, from the index for your GPU (see pytorch.org), e.g. AMD ROCm:
+#   pip install torch --index-url https://download.pytorch.org/whl/rocm7.2
+numpy
+tiktoken
+fastapi
+uvicorn
+matplotlib

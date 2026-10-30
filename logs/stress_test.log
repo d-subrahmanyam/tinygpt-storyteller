@@ -1,0 +1,50 @@
+GPU 0: Radeon RX 7900 XT, 20.0 GiB, running 600s
+VRAM test buffer: 15.8 GiB
+[   0s]    50W edge=53C junction=61C mem=66C busy=5% link=16.0 GT/s PCIe x4 |   0.0 TFLOPS h2d= 0.0 d2h= 0.0 GB/s | errors=0
+[  15s]   256W edge=61C junction=73C mem=72C busy=100% link=16.0 GT/s PCIe x4 |  20.3 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[  30s]   155W edge=63C junction=71C mem=76C busy=100% link=16.0 GT/s PCIe x4 |  20.2 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[  45s]   235W edge=66C junction=78C mem=77C busy=85% link=16.0 GT/s PCIe x4 |  20.1 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[  60s]   158W edge=68C junction=77C mem=81C busy=82% link=16.0 GT/s PCIe x4 |  20.0 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[  75s]   267W edge=70C junction=83C mem=80C busy=93% link=16.0 GT/s PCIe x4 |  20.0 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[  90s]   134W edge=69C junction=78C mem=83C busy=74% link=16.0 GT/s PCIe x4 |  20.0 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 105s]   282W edge=71C junction=85C mem=82C busy=100% link=16.0 GT/s PCIe x4 |  19.9 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 120s]   107W edge=70C junction=79C mem=83C busy=51% link=16.0 GT/s PCIe x4 |  19.9 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 135s]   273W edge=72C junction=86C mem=83C busy=100% link=16.0 GT/s PCIe x4 |  19.9 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 150s]   211W edge=72C junction=82C mem=85C busy=90% link=16.0 GT/s PCIe x4 |  19.8 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 165s]   183W edge=71C junction=82C mem=82C busy=72% link=16.0 GT/s PCIe x4 |  19.8 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 180s]   231W edge=72C junction=83C mem=86C busy=100% link=16.0 GT/s PCIe x4 |  19.9 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 195s]   160W edge=71C junction=81C mem=82C busy=71% link=16.0 GT/s PCIe x4 |  19.8 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 210s]   248W edge=73C junction=84C mem=86C busy=100% link=16.0 GT/s PCIe x4 |  19.8 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 225s]   159W edge=72C junction=82C mem=84C busy=100% link=16.0 GT/s PCIe x4 |  19.8 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 240s]   263W edge=74C junction=86C mem=87C busy=100% link=16.0 GT/s PCIe x4 |  19.8 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 255s]   132W edge=74C junction=83C mem=85C busy=68% link=16.0 GT/s PCIe x4 |  19.7 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 270s]   268W edge=76C junction=89C mem=87C busy=100% link=16.0 GT/s PCIe x4 |  19.7 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 285s]   143W edge=75C junction=84C mem=88C busy=77% link=16.0 GT/s PCIe x4 |  19.7 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 300s]   291W edge=77C junction=91C mem=86C busy=99% link=16.0 GT/s PCIe x4 |  19.7 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 315s]   211W edge=76C junction=87C mem=90C busy=100% link=16.0 GT/s PCIe x4 |  19.6 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 330s]   166W edge=76C junction=85C mem=86C busy=90% link=16.0 GT/s PCIe x4 |  19.6 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 345s]   263W edge=77C junction=89C mem=90C busy=100% link=16.0 GT/s PCIe x4 |  19.6 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 360s]   135W edge=77C junction=86C mem=89C busy=66% link=16.0 GT/s PCIe x4 |  19.5 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 375s]   253W edge=78C junction=91C mem=88C busy=86% link=16.0 GT/s PCIe x4 |  19.6 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 390s]   190W edge=78C junction=88C mem=91C busy=87% link=16.0 GT/s PCIe x4 |  19.5 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 405s]   147W edge=77C junction=86C mem=87C busy=62% link=16.0 GT/s PCIe x4 |  19.5 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 420s]   259W edge=78C junction=90C mem=91C busy=100% link=16.0 GT/s PCIe x4 |  19.5 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 435s]   125W edge=78C junction=87C mem=88C busy=48% link=16.0 GT/s PCIe x4 |  19.5 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 450s]   255W edge=79C junction=92C mem=89C busy=90% link=16.0 GT/s PCIe x4 |  19.5 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 465s]   181W edge=79C junction=89C mem=91C busy=80% link=16.0 GT/s PCIe x4 |  19.4 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 480s]   175W edge=78C junction=89C mem=88C busy=73% link=16.0 GT/s PCIe x4 |  19.4 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 495s]   253W edge=79C junction=91C mem=92C busy=100% link=16.0 GT/s PCIe x4 |  19.4 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 510s]   139W edge=78C junction=88C mem=90C busy=0% link=16.0 GT/s PCIe x4 |  19.4 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+[ 525s]   256W edge=80C junction=92C mem=92C busy=100% link=16.0 GT/s PCIe x4 |  19.4 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 540s]   163W edge=79C junction=88C mem=90C busy=100% link=16.0 GT/s PCIe x4 |  19.4 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 555s]   171W edge=79C junction=89C mem=88C busy=68% link=16.0 GT/s PCIe x4 |  19.4 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 570s]   254W edge=80C junction=92C mem=92C busy=100% link=16.0 GT/s PCIe x4 |  19.4 TFLOPS h2d= 7.1 d2h= 7.1 GB/s | errors=0
+[ 585s]   121W edge=78C junction=88C mem=89C busy=55% link=16.0 GT/s PCIe x4 |  19.4 TFLOPS h2d= 7.0 d2h= 7.1 GB/s | errors=0
+
+=== Summary ===
+cycles:        337
+compute:       19.7 TFLOPS FP32 avg
+PCIe h2d/d2h:  7.06 / 7.14 GB/s avg
+peak power:    308 W, peak junction 97 C
+errors:        {'compute': 0, 'vram': 0, 'pcie': 0}
+RESULT: PASS
